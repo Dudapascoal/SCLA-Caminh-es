@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCLA-Caminhões</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+        /* Chatbot Button Styles */
+        .chatbot-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #1A2942;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 24px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            /* Remove underline from link */
+            border: 2px solid #71ffe5;
+        }
+
+        .chatbot-btn i {
+            color: #71ffe5;
+            /* Change icon color to yellow */
+        }
+
+        .chatbot-btn:hover {
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/SCLA.png" alt="Logo Tênis">
+            </div>
+            <div class="subtitulo-logo">
+                <h1>SCLA <span>Caminhões</span></h1>
+                <p>Fábrica de Caminhões</p>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quem-somos.html">Quem somos</a></li>
+                        <li><a href="compras.html">Peças</a></li>
+                        <li><a href="calcular_frete.html">Calcular Frete</a></li>
+                        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                        <li><a href="carrinho.html"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>SCLA <span>Caminhões</span></h1>
+                <h2>O caminho é longo, mas com a gente, você chega mais rápido.</h2>
+                <p>Somos a força que conecta o transportador ao futuro, transformando sonhos em realizações e criando
+                    parcerias que redefinem o caminho. Com foco em sustentabilidade, inovação e pessoas, seguimos sempre
+                    em frente.</p>
+            </div>
+        </div>
+    </section>
+
+   <br><br><br><br> 
+  <h2 class="section-title">Principais Serviços</h2> 
+ <div class="wrapper">
+        <div class="service">
+            <div class="service-flip">
+                <div class="service-face">
+                    <div class="service-icon"><i class="fa-solid fa-truck"></i></div>
+                    <h2 class="service-heading">Fabricação de Caminhões</h2>
+                    <p class="service-text">Produção de caminhões robustos e eficientes.</p>
+                </div>
+                <div class="service-reverse">
+                    <h2 class="service-heading">Fabricação</h2>
+                    <p class="service-text">Construímos caminhões com as melhores tecnologias, garantindo durabilidade e desempenho em longas distâncias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-flip">
+                <div class="service-face">
+                    <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h2 class="service-heading">Manutenção e Troca</h2>
+                    <p class="service-text">Manutenção ágil e confiável para seu caminhão.</p>
+                </div>
+                <div class="service-reverse">
+                    <h2 class="service-heading">Manutenção</h2>
+                    <p class="service-text">Manutenção e troca de peças com agilidade, qualidade e confiança para manter seu caminhão em perfeito estado.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-flip">
+                <div class="service-face">
+                    <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h2 class="service-heading">Serviços em Nuvem</h2>
+                    <p class="service-text">Otimização com base em dados.</p>
+                </div>
+                <div class="service-reverse">
+                    <h2 class="service-heading">Dados</h2>
+                    <p class="service-text">Decisões inteligentes com serviços orientados por dados, otimizando desempenho e reduzindo custos da frota.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-flip">
+                <div class="service-face">
+                    <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h2 class="service-heading">Peças com Melhor Custo</h2>
+                    <p class="service-text">Peças com ótimo custo-benefício.</p>
+                </div>
+                <div class="service-reverse">
+                    <h2 class="service-heading">Peças</h2>
+                    <p class="service-text">Peças e produtos com o melhor custo-benefício para manter seu caminhão rodando mais e gastando menos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- site: planetatruck.com.br -->
+    <section class="features-section">
+        <h2 class="section-title">Peças mais procuradas</h2>
+        <br>
+        <div class="features-grid">
+            <div class="feature-card">
+                <a href="compras.html"><img src="img/peça1.png" alt="Feature 1" /></a>
+                <h3>Par Calota Traseira Cromada Speedline R22,5-275 10 Furos</h3>
+                <br>
+                <h4>R$ 1.493,90</h4>
+                <p>Até 12x de R$124,90 sem juros</p>
+                <button class="saiba-mais-btn">
+                    <a href="compras.html" style="text-decoration: none; color: inherit;">Comprar</a>
+                </button>
+            </div>
+            <div class="feature-card">
+                <a href="compras.html"><img src="img/peça2.png" alt="Feature 2" /></a>
+                <h3>Par Calota 4 Pontas Style Aro 16/17,5 para Rodoar Bepo</h3>
+                <br>
+                <h4>R$ 156,50</h4>
+                <p>Até 12x de R$13,04 sem juros</p>
+                <button class="saiba-mais-btn">
+                    <a href="compras.html" style="text-decoration: none; color: inherit;">Comprar</a>
+                </button>
+            </div>
+            <div class="feature-card">
+                <a href="compras.html"><img src="img/peça3.png" alt="Feature 3" /></a>
+                <h3>Lanterna Lateral com Conector e Suporte LED Bivolt</h3>
+                <br>
+                <h4>R$ 14,70</h4>
+                <p>Até 12x de R$1,22 sem juros no cartão</p>
+                <button class="saiba-mais-btn">
+                    <a href="compras.html" style="text-decoration: none; color: inherit;">Comprar</a>
+                </button>
+            </div>
+            <div class="feature-card">
+                <a href="compras.html"><img src="img/peça4.png" alt="Feature 4" /></a>
+                <h3>Par Lanterna Traseira LED Randon 2011 2015 Refil Linha</h3>
+                <br>
+                <h4>R$ 329,90</h4>
+                <p>Até 12x de R$27,49 sem juros</p>
+                <button class="saiba-mais-btn">
+                    <a href="compras.html" style="text-decoration: none; color: inherit;">Comprar</a>
+                </button>
+            </div>
+            <div class="feature-card">
+                <a href="compras.html"><img src="img/peça5.png" alt="Feature 5" /></a>
+                <h3>Tampa de Bateria Mercedes-Benz Atron oficial</h3>
+                <br>
+                <h4>R$ 147,30</h4>
+                <p>Até 12x de R$12,27 sem juros</p>
+                <button class="saiba-mais-btn">
+                    <a href="compras.html" style="text-decoration: none; color: inherit;">Comprar</a>
+                </button>
+            </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="section-operations" id="operacoes">
+        <div class="box-calculadora">
+            <div class="wrapper-container">
+                <h2 class="section-title">Empresas Parceiras</h2>
+                <br>
+                <!-- Grid de operações -->
+                <div class="grid-operacoes">
+                    <!-- Quadrado de Relacional -->
+                    <a href="opr_relacionais.html" class="operation-box">
+                        <img src="img/BMW.png" alt="Relacional">
+                        <span>BMW</span>
+                    </a>
+                    <!-- Quadrado de Funções -->
+                    <a href="funcoes.html" class="operation-box">
+                        <img src="img/Logo_Mercedes.png" alt="Funções">
+                        <span>Mercedes-Benz</span>
+                    </a>
+                    <!-- Quadrado de Matemática -->
+                    <a href="Operacoes_matematicas.html" class="operation-box">
+                        <img src="img/logo_scania.jpeg" alt="Matemática">
+                        <span>Scania</span>
+                    </a>
+                    <!-- Quadrado de Strings -->
+                    <a href="manipulacao_strings.html" class="operation-box">
+                        <img src="img/volvo.jfif" alt="Strings">
+                        <span>Volvo</span>
+                    </a>
+                    <!-- Quadrado de Strings -->
+                    <a href="manipulacao_strings.html" class="operation-box">
+                        <img src="img/jadlog.png" alt="Strings">
+                        <span>Jadlog</span>
+                    </a>
+                    <!-- Quadrado de Data -->
+                    <a href="manipulacao_datas.html" class="operation-box">
+                        <img src="img/DAF_LOGO.jpg" alt="Data">
+                        <span>DAF Caminhões</span>
+                    </a>
+                    <!-- Quadrado de Data -->
+                    <a href="manipulacao_datas.html" class="operation-box">
+                        <img src="img/JSL.png" alt="Data">
+                        <span>JSL</span>
+                    </a>
+                    <!-- Quadrado de Data -->
+                    <a href="manipulacao_datas.html" class="operation-box">
+                        <img src="img/logo_tegma.jpeg" alt="Data">
+                        <span>Tegma</span>
+                    </a>
+                    <!-- Quadrado de Data -->
+                    <a href="manipulacao_datas.html" class="operation-box">
+                        <img src="img/planeta_truck.jpg" alt="Data">
+                        <span>Planeta Truck</span>
+                    </a>
+                    <!-- Quadrado de Aritmética -->
+                    <a href="operadores_aritmeticos.html" class="operation-box">
+                        <img src="img/abarth.png" alt="Aritmética">
+                        <span>Abarth</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <section class="info-section">
+        <div class="info-text">
+            <h2>Pronto para aprimorar o seus conhecimentos?</h2>
+            <br>
+            <p>
+                A SCLA anda lado a lado com a educação, promovendo proatividade e espalhando a importância da economia
+                circular em nosso país. Por isso, a SCLA disponibiliza peças que inicialmente seriam descartadas com
+                mais de 50% de desconto para representantes de escolas técnicas para que possam utilizar como materiais
+                didáticos.
+            </p>
+            <button class="saiba-mais-btn"
+                onclick="alert('A economia circular é um modelo que visa reduzir o desperdício e maximizar o uso de recursos, promovendo a reutilização, reciclagem e recuperação de materiais. Ao adotar esse conceito, conseguimos prolongar o ciclo de vida dos produtos, contribuindo para um ambiente mais sustentável e menos poluente. Para representantes de escolas técnicas, oferecemos uma oferta especial: mais de 50% de desconto em nossos produtos e serviços. Para aproveitar, basta preencher o formulário de cadastro em nosso site e garantir o benefício para sua instituição.')">Saiba
+                mais</button>
+        </div>
+    </section>
+
+
+    <br><br><br><br>
+    <!-- Depoimentos -->
+    <h2 class="section-title">Feedbacks</h2>
+    <div class="depoimentos-container">
+        <!-- Card 1 -->
+        <div class="depoimento-card">
+            <img src="img/paulo.jpg" alt="Foto do usuário">
+            <br>
+            <h2>Paulo César Pascoal</h2>
+            <br>
+            <p>"Sempre que tenho que resolver algo com os caminhões, é com a SCLA que eu conto. Sempre com os melhores
+                preços!"</p>
+            <div class="estrelas">★★★★★</div>
+        </div>
+        <!-- Card 2 -->
+        <div class="depoimento-card">
+            <img src="img/Roro.jpg" alt="Foto do usuário">
+            <br>
+            <h2>Rogério Luciano</h2>
+            <br>
+            <p>"Um excelente atendimento e rapidez na entrega! As peças são de ótima qualidade e têm um excelente
+                custo-benefício"</p>
+            <div class="estrelas">★★★★★</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="depoimento-card">
+            <img src="img/may.jpg" alt="Foto do usuário">
+            <br>
+            <h2>Mayara de Paula</h2>
+            <br>
+            <p>"A empresa se destaca pela competência e confiabilidade. As peças são de alta durabilidade, recomendo!!"
+            </p>
+            <div class="estrelas">★★★★★</div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+
+    <!-- CTA -->
+    <div class="cta">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.895398100846!2d-46.610705099842576!3d-23.679698430612618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44937536ceeb%3A0xfa10a6739d679365!2sSenai%20Diadema%20-%20Manuel%20Garcia%20Filho!5e0!3m2!1spt-BR!2sbr!4v1747237804346!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+        <div class="container"><br><br>
+            <h2 class="section-title">Meios de Contato</h2>
+            <br><br>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Endereço</h3>
+                            <p>Av. do Transporte, 330<br>Bairro Nova Logística - São Paulo/SP</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Telefone</h3>
+                            <p>(11) 8002-8922</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>frota@SCLAcaminhoes.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Segunda a Sexta: 8h às 19:30<br>Sábado: 8h às 16h30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Digite seu nome:" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Digite seu e-mail:" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Digite seu telefone:">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua Mensagem:" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="saiba-mais-btn">Entrar em contato</button>
+                    </form>
+                </div>
+            </div>
+        </div><br>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre</h2>
+                <p>A SCLA (Fábrica de caminhões) atende mais de 10 países diferentes promovendo a entrega de caminhões
+                    altamente automatizados, com garantias estendidas e de qualidade.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a href="compras.html">Peças</a></li>
+                    <li><a href="calcular_frete.html">Calcular Frete</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Redes Sociais</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/"><img src="img/instagram.jpg" alt="Instagram"></a>
+                    <a href="https://br.linkedin.com/?mcid=6821526239111716925&src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.725790844702_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9216076&cid=&gad_source=1&gad_campaignid=12619604099&gbraid=0AAAAABhL5JPFVjQqd8O_7jbgLpekta6y7&gclid=CjwKCAjw56DBBhAkEiwAaFsG-rH-AzF8qBW9n83s0pchYnxtY4U-4tSynl6f8994kU50ZFZCHfqs1hoCLgMQAvD_BwE&gclsrc=aw.ds"><img src="img/linkedin.jpg" alt="GitHub"></a>
+                    <a href="https://www.whatsapp.com/?lang=pt_BR"><img src="img/wtt.jpg" alt="GitHub"></a>
+                    <a href="https://maps.app.goo.gl/D2uzaBE5hAJAMyey7"><img src="img/maps.jpg" alt="GitHub"></a>
+                    <a href="https://br.pinterest.com/"><img src="img/pinterest.jpg" alt="GitHub"></a>
+                </div>
+                <br>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Assine nossa newsletter para receber ofertas exclusivas.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 SCLA / Desenvolvido por Maria Eduarda Moreira Pascoal | O caminho é longo, mas com a gente, você
+            chega mais rápido.
+        </div>
+    </footer>
+
+    <!-- Botão do Chatbot -->
+    <a href="chat-bot.html" class="chatbot-btn" id="chatbot-button" title="Fale conosco">
+        <i class="fas fa-robot"></i>
+    </a>
+
+</body>
+</html>
